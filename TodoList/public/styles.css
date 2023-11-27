@@ -77,7 +77,7 @@ Variables
   --clr-primary-9: hsl(205, 90%, 12%);
   --clr-primary-10: hsl(205, 100%, 4%);
   /* darkest grey - used for headings */
-  --clr-grey-1: hsl(209, 61%, 84%);
+  --clr-grey-1: hsl(209, 61%, 94%);
   --clr-grey-2: hsl(211, 39%, 77%);
   --clr-grey-3: hsl(209, 34%, 70%);
   --clr-grey-4: hsl(209, 28%, 61%);
@@ -398,7 +398,7 @@ todo List
 .todo-list {
   display: flex;
   justify-content: space-between;
-  background-color: hsl(210, 36%, 96%);
+  background-color: var(--clr-grey-8);
   padding: 5px 10px;
   border-radius: 5px;
   margin: 5px;
