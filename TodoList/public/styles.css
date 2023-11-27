@@ -392,7 +392,7 @@ todo List
 
 .todo-container {
   max-height: 40vh;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 
 .todo-list {
@@ -440,4 +440,23 @@ todo List
   background-color: var(--clr-primary-5);
   border-radius: 20px;
   /* border: 3px solid ; */
+}
+
+/* 400px media */
+@media screen and (max-width: 400px) {
+  .section-center {
+    margin-top: 4rem;
+  }
+  .form-control {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  #todo {
+    border-radius: var(--radius);
+  }
+  .submit-btn {
+    border-radius: var(--radius);
+    flex: 1;
+  }
 }
