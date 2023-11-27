@@ -15,6 +15,8 @@ Variables
 ===============
 */
 
+/* light mode */
+
 :root {
   /* dark shades of primary color*/
   --clr-primary-1: hsl(205, 86%, 17%);
@@ -57,6 +59,52 @@ Variables
   --max-width: 1170px;
   --fixed-width: 620px;
 }
+
+/* dark mode */
+
+.dark {
+  /* dark shades of primary color*/
+  --clr-primary-1: hsl(205, 86%, 83%);
+  --clr-primary-2: hsl(205, 77%, 73%);
+  --clr-primary-3: hsl(205, 72%, 63%);
+  --clr-primary-4: hsl(205, 63%, 52%);
+  /* primary/main color */
+  --clr-primary-5: hsl(205, 78%, 40%);
+  /* lighter shades of primary color */
+  --clr-primary-6: hsl(205, 89%, 30%);
+  --clr-primary-7: hsl(205, 90%, 34%);
+  --clr-primary-8: hsl(205, 86%, 19%);
+  --clr-primary-9: hsl(205, 90%, 12%);
+  --clr-primary-10: hsl(205, 100%, 4%);
+  /* darkest grey - used for headings */
+  --clr-grey-1: hsl(209, 61%, 84%);
+  --clr-grey-2: hsl(211, 39%, 77%);
+  --clr-grey-3: hsl(209, 34%, 70%);
+  --clr-grey-4: hsl(209, 28%, 61%);
+  /* grey used for paragraphs */
+  --clr-grey-5: hsl(210, 22%, 69%);
+  --clr-grey-6: hsl(209, 23%, 40%);
+  --clr-grey-7: hsl(211, 27%, 30%);
+  --clr-grey-8: hsl(210, 31%, 20%);
+  --clr-grey-9: hsl(212, 33%, 11%);
+  --clr-grey-10: hsl(210, 36%, 4%);
+  --clr-white: #000000;
+  --clr-red-dark: hsl(360, 67%, 44%);
+  --clr-red-light: hsl(360, 71%, 66%);
+  --clr-green-dark: hsl(125, 67%, 44%);
+  --clr-green-light: hsl(125, 71%, 66%);
+  --clr-black: hsl(0, 0%, 87%);
+  --ff-primary: "Roboto", sans-serif;
+  --ff-secondary: "Open Sans", sans-serif;
+  --transition: all 0.3s linear;
+  --spacing: 0.25rem;
+  --radius: 0.5rem;
+  --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  --max-width: 1170px;
+  --fixed-width: 620px;
+}
+
 /*
 =============== 
 Global Styles
@@ -259,6 +307,13 @@ todo List
   color: var(--clr-white);
 }
 
+.toggle-btn {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  border-radius: var(--radius);
+}
+
 .todo-container {
   margin-top: 2rem;
   transition: var(--transition);
@@ -331,16 +386,16 @@ todo List
   color: var(--clr-red-dark);
 }
 
-.icon{
+.icon {
   width: 20px;
 }
 
-.todo-container{
+.todo-container {
   max-height: 40vh;
   overflow-y: scroll;
 }
 
-.todo-list{
+.todo-list {
   display: flex;
   justify-content: space-between;
   background-color: hsl(210, 36%, 96%);
@@ -349,19 +404,19 @@ todo List
   margin: 5px;
 }
 
-.underline{
+.underline {
   text-decoration: underline;
 }
 
-.text-red{
+.text-red {
   color: red;
 }
 
-.pointer{
+.pointer {
   cursor: pointer;
 }
 
-.scrollable{
+.scrollable {
   overflow: auto;
 }
 
@@ -386,6 +441,3 @@ todo List
   border-radius: 20px;
   /* border: 3px solid ; */
 }
-
-
-
